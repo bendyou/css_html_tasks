@@ -1,0 +1,137 @@
+/*Здание 2*/
+
+.p_2 {color: orange;}
+.h1_2 {color: green;}
+.h2_2 {color: blue;}
+.h3_2 {color: red;}
+
+/*Здание 3*/
+
+.p_3_1 {color: rgb(5, 99, 71);}
+.p_3_2 {color: #DF64BD;}
+
+/*Здание 4*/
+
+.border_4 {
+	width: 300px;
+	height: 100px;
+}
+
+/*Здание 5*/
+
+.border_5 {
+	width: 400px;
+	height: 300px;
+}
+
+/*Здание 6*/
+
+.h1_6 {text-align: right;}
+h2 {text-align: center; width: 300px;}
+td {width: 500px;}
+th {text-align: left;}
+td {text-align: center;}
+p {text-align: justify;}
+
+/*Здание 7*/
+
+.border_7 {
+    width: 500px;
+    height: 300px;
+}
+.th_7 {
+	font-weight: normal;
+}
+.td_7 {
+	font-weight: bold;
+    text-align: center;
+}
+
+/*Здание 8*/
+
+.h2_8 {
+	font-style: italic;
+}
+
+/*Здание 9*/
+
+.h1_9 {
+	font-size: 50px;
+    text-align: center;
+}
+.h2_9 {
+    font-size: 40px;
+    font-weight: normal;
+}
+.p_9 {
+    font-size: 30px;
+}
+
+/*Здание 10*/
+
+.p_10_1 {font-family: 'Times New Roman';}
+.p_10_2 {font-family: 'Arial';}
+.p_10_3 {font-family: 'Georgia';}
+.p_10_4 {font-family: 'Verdana';}
+.p_10_5 {font-family: 'Trebuchet MS';}
+.p_10_6 {font-family: 'Impact';}
+.p_10_7 {font-family: 'Arial Black';}
+.p_10_8 {font-family: 'Comic Sans MS';}
+.p_10_9 {font-family: 'Courier New';}
+
+/*Здание 11*/
+
+.p_11 {font-size: 30px; line-height: 45px;}
+
+/*Здание 12*/
+
+.p_12 {font-size: 30px; line-height: 1.5;}
+
+/*Здание 13*/
+
+.p_13 { font: 13px/20px "Times New Roman";}
+
+/*Здание 14*/
+
+.p_14 { 
+    color: red;
+    width: 300px;
+    font: bold 40px "Arial";
+}
+
+/*Здание 15*/
+
+.p_15 {
+    font: bold italic 40px/60px Arial;
+    text-indent: 50px;
+}
+
+/*Здание 16*/
+
+.p_16 {
+	text-indent: 50px;
+	text-align: justify;
+	width: 400px;
+}
+
+/*Здание 17*/
+
+.p_17 {text-decoration: underline;}
+
+/*Здание 18*/
+
+.p_18 {text-decoration: overline;}
+
+/*Здание 19*/
+
+.p_19 {text-decoration: line-through;}
+
+/*Здание 20*/
+
+.a_20 {text-decoration: none; color: red;}
+
+/*Практическое задание*/
+
+.h1_p {color: blue; text-align: center;}
+.h2_p {color: green;}
+.i_p {color: green;}
