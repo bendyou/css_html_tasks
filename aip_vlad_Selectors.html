@@ -1,0 +1,1204 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>This is the title</title>
+        <link rel="stylesheet" href="selectors.css">
+	</head>
+	<body>
+        <!--
+        №1 
+
+        Дан следующий код:
+        <ul>
+	        <li>text <a href="">link</a></li>
+	        <li>text <a href="">link</a></li>
+	        <li>text <a href="">link</a></li>
+	        <li>text <a href=""><b>bold link</b></a></li>
+        </ul>
+        Расскажите какие родительские связи вы видите.
+
+        Ответ:
+        ul - потомки: li, a, b;
+        li - родитель: ul; потомки - a, b,
+        a - родитель: ul, li;  потомки - b,
+        b - родитель: ul, li, a;
+
+        №2
+
+        Дан следующий код:
+
+        <table>
+	        <tr>
+		        <td>cell 1</td>
+		        <td>cell 2</td>
+		        <td>cell 3</td>
+	        </tr>
+	        <tr>
+		        <td>cell 4</td>
+		        <td>cell 5</td>
+		        <td>cell 6</td>
+	        </tr>
+	        <tr>
+		        <td>cell 7</td>
+		        <td>cell 8</td>
+		        <td>cell 9</td>
+	        </tr>
+        </table>
+
+        Расскажите какие родительские связи вы видите.
+
+        Ответ:
+        table - потомки: tr, td;
+        tr - родитель: table; потомки: td;
+        td - родитель: table, tr;
+
+        №3
+
+        Дан следующий код:
+
+        <p>
+	        This is a paragraph with text
+	        <i><b>bold italic</b></i>
+	        <a href="">link <i>italic</i></a>.
+        </p>
+
+        Какие потомки есть у абзаца? Какие непосредственные потомки есть у абзаца?
+
+        Ответ:
+        Потомки - i,b,a;
+        Непосредственные потомки - i,a;
+
+        №4
+
+        Дан следующий код:
+
+        <p>
+	        <a href="">link <i><b>bold italic</b></i></a>
+        </p>
+
+        Расскажите, какие родители есть у тега b. Кто является его непосредственным родителем?
+
+        Ответ:
+        Родители - i,a,p;
+        Непосредственный родитель - i;
+
+        №5-7
+
+        Ответ: Тега b нет в коде предоставленном заданием.
+        
+        №8
+
+        Изучив код, скажите какой цвет будет иметь текст в теге li:
+
+        <ul>
+	        <li>text</li>
+	        <li>text</li>
+	        <li>text</li>
+
+        </ul>
+        ul {
+	        color: blue;
+        }
+
+        Ответ: blue
+
+        #9
+
+        Изучив код, скажите какой цвет будет иметь текст в теге li:
+
+        <ul>
+	        <li>text</li>
+	        <li>text</li>
+	        <li>text</li>
+        </ul>
+
+        ul {
+	        color: blue;
+        }
+        li {
+	        color: red;
+        }
+
+        Ответ: red
+
+        #10
+
+        Изучив код, скажите какой цвет будет иметь текст в теге i:
+
+        <ul>
+            <li>text <i>italic</i> text</li>
+            <li>text <i>italic</i> text</li>
+            <li>text <i>italic</i> text</li>
+        </ul>
+
+        ul {
+            color: blue;
+        }
+        li {
+            color: red;
+        }
+        i {
+            color: green;
+        }
+
+        Ответ: green
+
+        #11
+
+        Изучив код, скажите какой размер будет иметь текст в теге i:
+
+        <ul>
+            <li>text <i>italic</i> text</li>
+            <li>text <i>italic</i> text</li>
+            <li>text <i>italic</i> text</li>
+        </ul>
+
+        i {
+            font-size: 30px;
+        }
+        ul {
+            font-size: 20px;
+        }
+        li {
+            color: red;
+            font-weight: bold;
+        }
+
+        Ответ: 30px
+        -->
+        <h1>#12</h1>
+        <h1 class="h1_12">text</h1>
+        <h2 class="h2_12">text</h2>
+        <h3 class="h3_12">text</h3>
+        <h1>#13</h1>
+        <h1 class="h1_13">text</h1>
+        <h2 class="h2_13">text</h2>
+        <h3 class="h3_13">text</h3>
+        <h1>#14</h1>
+        <h1 class="h1_14">text</h1>
+        <h2 class="h2_14">text</h2>
+        <h3 class="h3_14">text</h3>
+        <h1>#15</h1>
+        <ul class="ul_15">
+            <li class="li_15">text <i class="i_15">italic</i></li>
+            <li class="li_15">text <i class="i_15">italic</i></li>
+            <li class="li_15">text <i class="i_15">italic</i></li>
+            <li class="li_15">text <i class="i_15">italic</i></li>
+        </ul>
+        
+        <p class="p_15">
+            paragraph text <i class="i_15">italic</i>
+        </p>
+        <p class="p_15">
+            paragraph text <i class="i_15">italic</i>
+        </p>
+        <h1>#16</h1>
+        <p class="p_16">
+            paragraph text <b class="b_16"><i class="i_16">bold italic</i></b>
+        </p>
+        <p class="p_16">
+            paragraph text <i class="i_16">italic</i>
+        </p>
+        <h1>#17</h1>
+        <ul class="ul_17">
+            <li class="li_17">
+                <i class="i_17">italic</i>
+                <b class="b_17">bold</b>
+                <b class="b_17"><i class="i_17">bold italic</i></b>
+            </li>
+            <li class="li_17">
+                <i class="i_17">italic</i>
+                <b class="b_17">bold</b>
+                <b class="b_17"><i class="i_17">bold italic</i></b>
+            </li>
+        </ul>
+        <h1>#18</h1>
+        <ul>
+            <li class="odd_18">text</li>
+            <li class="eve_18">text</li>
+            <li class="odd_18">text</li>
+            <li class="eve_18">text</li>
+            <li class="odd_18">text</li>
+            <li class="eve_18">text</li>
+        </ul>
+        <h1>#19</h1>
+        <h2 class="eee_19">Title</h2>
+        <p class="eee_19">
+            paragraph
+        </p>
+        <p class="eee_19">
+            paragraph
+        </p>
+        <p class="p_19">
+            paragraph without class
+        </p>
+        
+        <ul class="eee_19">
+            <li class="li_19">text</li>
+            <li class="li_19">text</li>
+            <li class="li_19">text</li>
+            <li class="li_19">text</li>
+            <li class="li_19">text</li>
+        </ul>
+        <!--
+        #20
+        
+        Объясните, почему в предыдущей задаче в красный цвет красятся теги li, хотя класс, задающий цвет, назначен тегу ul.
+
+        li непосредственный потомок ul, из-за этого его цвет тоже изменился
+        -->
+        <h1>#21</h1>
+        <p class="p_21">
+            Lorem ipsum <span class="xxx_21">dolor sit</span> amet.
+        </p>
+        <p class="p_21">
+            <span class="xxx_21">Lorem ipsum</span> dolor sit amet.
+        </p>
+        <h1>#22</h1>
+        <div class="div_22_1">
+            <h2>Title</h2>
+            <p>
+                text
+            </p>
+            <p>
+                text
+            </p>
+        </div>
+        <div class="div_22_2">
+            <h2>Title</h2>
+            <p>
+                text
+            </p>
+            <p>
+                text
+            </p>
+            <p>
+                text
+            </p>
+        </div>
+        <div class="div_22_3">
+            <h2>Title</h2>
+            <p>
+                text
+            </p>
+            <p>
+                text
+            </p>
+            <p>
+                text
+            </p>
+            <p>
+                text
+            </p>
+        </div>
+        <h1>#23</h1>
+        <div class="div_23_1">
+            <h2>Title</h2>
+            <p>
+                text
+            </p>
+            <p>
+                text
+            </p>
+        </div>
+        <div class="div_23_2">
+            <h2>Title</h2>
+            <p>
+                text
+            </p>
+            <p>
+                text
+            </p>
+        </div>
+        <div class="div_23_1">
+            <h2>Title</h2>
+            <p>
+                text
+            </p>
+            <p>
+                text
+            </p>
+        </div>
+        <div class="div_23_2">
+            <h2>Title</h2>
+            <p>
+                text
+            </p>
+            <p>
+                text
+            </p>
+        </div>
+        <h1>#24</h1>
+        <p class="eee_24">text</p>
+        <p class="zzz_24">text</p>
+        <h1>#25</h1>
+        <p class="eee_25">text</p>
+        <p class="zzz_25">text</p>
+        <p class="ggg_25">text</p>
+        <h1>#26</h1>
+        <h2 class="header">text</h2>
+        <h2 class="header">text</h2>
+        <h3 class="header">text</h3>
+        <h3 class="header">text</h3>
+        <h1>#27</h1>
+        <p class="eee_27">
+            text <i>italic</i>
+        </p>
+        <p class="eee_27">
+            text <i>italic</i>
+        </p>
+        <div class="eee_27">
+            text <i>italic</i>
+        </div>
+        <div class="eee_27">
+            text <i>italic</i>
+        </div>
+        <h1>#28</h1>
+        <h2 class="eee_28">text
+            <p class="bbb_28">text</p>
+        </h2>
+        <h1>#29</h1>
+        <div class="eee_29">
+            <h2>Text</h2>
+            <h2>Text</h2>
+        </div>
+        <h1>#30</h1>
+        <div class="eee_30">
+            <h2 class="bbb_30">Text</h2>
+            <h2>Text</h2>
+        </div>
+        <h1>#31</h1>
+        <div class="eee_31">
+            <h3 class="bbb_31">Text</h3>
+            <h3>Text</h3>
+        </div>
+        <h1>#32</h1>
+        <h2 class="eee_32">Text
+            <p class="bbb_32">text</p>
+            <p>text</p>
+        </h2>
+        <h1>#33</h1>
+        <h2 class="eee_33">Text
+            <p class="bbb_33">text and <span class="kkk_33">text</span></p>
+        </h2>
+        <h1>#34</h1>
+        <p class="bbb_34">text</p>
+        <p>text</p>
+        <h1>#35</h1>
+        <p class="bbb_35">text</p>
+        <p><span class="bbb_35">text</span></p>
+        <h1>#36</h1>
+        <div class="eee_36">
+            <p class="bbb_36">text</p>
+            <p>text</p>
+        </div>
+        <h1>#37</h1>
+        <div class="eee_37">
+            <p class="bbb_37">text</p>
+            <p><span class="bbb_37">text</span></p>
+        </div>
+        <h1>#38</h1>
+        <p class="success_38 large_38">text</p>
+        <p class="error_38 small_38">text</p>
+        <p class="error_38 large_38">text</p>
+        <p class="success_38 small_38">text</p>
+        <h1>#39</h1>
+        <p class="a_39 b_39 c_39">text</p>
+        <h1>#40</h1>
+        <div id="elem1">
+            <h2>Title</h2>
+            <p>
+                text
+            </p>
+            <p>
+                text
+            </p>
+        </div>
+        <div id="elem2">
+            <h2>Title</h2>
+            <p>
+                text
+            </p>
+            <p>
+                text
+            </p>
+        </div>
+        <div id="elem3">
+            <h2>Title</h2>
+            <p>
+                text
+            </p>
+            <p>
+                text
+            </p>
+        </div>
+        <h1>#41</h1>
+        <div id="block_41" class="text_41">
+            <p>text</p>
+            <p>text</p>
+            <p>text</p>
+        </div>
+        <div class="text_41">
+            <p>text</p>
+            <p>text</p>
+            <p>text</p>
+        </div>
+        <h1>#42</h1>
+        <div id="elem_42">
+            <h2>Choose</h2>
+            <p>---</p>
+            
+            <h2>Choose</h2>
+            <p>---</p>
+        </div>
+        
+        <h2>Do not +++</h2>
+        <p>---</p>
+        <h1>#43-46</h1>
+        <div id="elem_43">
+            <p class="text_43_1">+++</p>
+            <p class="text_43_1">+++</p>
+            <p class="text_43_2">+++</p>
+            <p class="text_43_2">+++</p>
+            
+            <ul>
+                <li class="text_43">+++</li>
+                <li class="text_43">+++</li>
+                <li class="text_43">+++</li>
+                <li class="text_43_1">+++</li>
+                <li class="text_43_1">+++</li>
+                <li class="text_43_1">+++</li>
+                <li>---</li>
+                <li>---</li>
+            </ul>
+        </div>
+        
+        <p class="text">---</p>
+        <h1>#47</h1>
+        <p class="eee_47">
+            This is a paragraph with text.
+        </p>
+        <p class="zzz_47">
+            This is a paragraph with text.
+        </p>
+        <p class="ccc_47">
+            This is a paragraph with text.
+        </p>
+        <p class="eee_47 zzz_47 ccc_47">
+            This is a paragraph with text.
+        </p>
+        <h1>#48-52</h1>
+        <p class="bbb_48 zzz_48">text</p>
+        <h2 class="bbb_48 zzz_48">text</h2>
+        <p id="elem_48" class="bbb_48">text</p>
+        <p id="elem_48" class="bbb_48 zzz_48">text</p>
+        <h2 id="elem_48" class="bbb_48">text</h2>
+        <h1>53-62</h1>
+        <!-- 1. h2.zzz_53 -->
+        <h2 class="zzz_53">Text 1 (h2.zzz_53)</h2>
+
+        <!-- 2. h2 .zzz_53 -->
+        <h2>
+            <span class="zzz_53">Text 2 (h2 .zzz_53)</span>
+        </h2>
+
+        <!-- 3. .bbb_53.zzz_53 -->
+        <div class="bbb_53 zzz_53">Text 3 (.bbb_53.zzz_53)</div>
+
+        <!-- 4. .bbb_53 .zzz_53 -->
+        <div class="bbb_53">
+            <div class="zzz_53">Text 4 (.bbb_53 .zzz_53)</div>
+        </div>
+
+        <!-- 5. .bbb_53.zzz_53.xxx_53 -->
+        <div class="bbb_53 zzz_53 xxx_53">Text 5 (.bbb_53.zzz_53.xxx_53)</div>
+
+        <!-- 6. .bbb_53 .zzz_53.xxx_53 -->
+        <div class="bbb_53">
+            <div class="zzz_53 xxx_53">Text 6 (.bbb_53 .zzz_53.xxx_53)</div>
+        </div>
+
+        <!-- 7. .bbb_53.zzz_53 .xxx_53 -->
+        <div class="bbb_53 zzz_53">
+            <div class="xxx_53">Text 7 (.bbb_53.zzz_53 .xxx_53)</div>
+        </div>
+
+        <!-- 8. .bbb_53 .zzz_53 .xxx_53 -->
+        <div class="bbb_53">
+            <div class="zzz_53">
+                <div class="xxx_53">Text 8 (.bbb_53 .zzz_53 .xxx_53)</div>
+            </div>
+        </div>
+
+        <!-- 9. #elem_53.bbb_53 -->
+        <div id="elem_53" class="bbb_53">Text 9 (#elem_53.bbb_53)</div>
+
+        <!-- 10. #elem_53 .bbb_53 -->
+        <div id="elem_53">
+            <div class="bbb_53">Text 10 (#elem_53 .bbb_53)</div>
+        </div>
+        <h1>#68</h1>
+        <div id="div_68">
+            <p>
+                +++
+            </p>
+            <p>
+                +++
+            </p>
+        </div>
+        <div id="div_68">
+            <p>
+                +++
+            </p>
+        </div>
+        
+        <p>
+            ---
+        </p>
+        <p>
+            ---
+        </p>
+        <h1>#69</h1>
+        <div id="div_69">
+            <h2>+++</h2>
+            <p>
+                ---
+            </p>
+            <p>
+                ---
+            </p>
+        </div>
+        <div id="div_69">
+            <h2>+++</h2>
+            <p>
+                ---
+            </p>
+        </div>
+        
+        <h2>---</h2>
+        <p>
+            ---
+        </p>
+        <h1>#70</h1>
+        <div id="block_70">
+            <h2>---</h2>
+            <p>
+                +++
+            </p>
+            <p>
+                +++
+            </p>
+        </div>
+        <div>
+            <h2>---</h2>
+            <p>
+                ---
+            </p>
+        </div>
+        
+        <h2>---</h2>
+        <p>
+            ---
+        </p>
+        <h1>#71</h1>
+        <div id="block_71">
+            <h2>+++</h2>
+            <p>
+                ---
+            </p>
+            <p>
+                ---
+            </p>
+            
+            <h2>+++</h2>
+            <p>
+                ---
+            </p>
+        </div>
+        <div>
+            <h2>---</h2>
+            <p>
+                ---
+            </p>
+        </div>
+        
+        <h2>---</h2>
+        <p>
+            ---
+        </p>
+        <h1>#72</h1>
+        <div id="block_72">
+            <h2 class="bbb_72">+++</h2>
+            <p class="bbb_72">
+                +++
+            </p>
+            <p>
+                ---
+            </p>
+            
+            <h2 class="bbb_72">+++</h2>
+            <p>
+                ---
+            </p>
+        </div>
+        <div class="bbb_72">
+            +++
+        </div>
+        
+        <h2>---</h2>
+        <p class="bbb_72">
+            +++
+        </p>
+        <h1>#73</h1>
+        <div id="block_73">
+            <h2 class="bbb_73">+++</h2>
+            <p class="bbb_73">
+                +++
+            </p>
+            <p>
+                ---
+            </p>
+            
+            <h2 class="bbb_73">+++</h2>
+            <p>
+                ---
+            </p>
+        </div>
+        <div class="bbb_73">
+            ---
+        </div>
+        
+        <h2>---</h2>
+        <p class="bbb_73">
+            ---
+        </p>
+        <h1>#74</h1>
+        <div id="block_74">
+            <h2 class="bbb_74">---</h2>
+            <p class="bbb_74">
+                +++
+            </p>
+            <p>
+                ---
+            </p>
+            
+            <h2 class="bbb_74">---</h2>
+            <p class="bbb_74">
+                +++
+            </p>
+        </div>
+        <div class="bbb_74">
+            ---
+        </div>
+        
+        <h2>---</h2>
+        <p class="bbb_74">
+            +++
+        </p>
+        <h1>#75</h1>
+        <div id="block_75">
+            <h2 class="bbb_75">+++</h2>
+            <p class="bbb_75">
+                ---
+            </p>
+            <p>
+                ---
+            </p>
+            
+            <h2 class="bbb_75">+++</h2>
+            <p class="bbb_75">
+                ---
+            </p>
+        </div>
+        
+        <h2>---</h2>
+        <p class="bbb_75">
+            ---
+        </p>
+        
+        <h2 class="bbb_75">+++</h2>
+        <p class="bbb_75">
+            ---
+        </p>
+        <h1>#76</h1>
+        <div id="block_76">
+            <h2 class="bbb_76">---</h2>
+            <p class="bbb_76">
+                +++
+            </p>
+            <p>
+                ---
+            </p>
+            
+            <h2 class="bbb_76">---</h2>
+            <p class="bbb_76">
+                +++
+            </p>
+        </div>
+        <div class="bbb_76">
+            ---
+        </div>
+        
+        <h2>---</h2>
+        <p class="bbb_76">
+            ---
+        </p>
+        <h1>#77</h1>
+        <h2 class="bbb_77">+++</h2>
+        <p class="bbb_77">
+            +++
+        </p>
+        
+        <h2 class="xxx_77">+++</h2>
+        <p>
+            ---
+        </p>
+        
+        <h2>---</h2>
+        <p class="xxx_77">
+            +++
+        </p>
+        
+        <div class="bbb_77">
+            +++
+        </div>
+        <h1>#78</h1>
+        <h2 class="bbb_78">---</h2>
+        <p class="bbb_78">
+            +++
+        </p>
+        
+        <h2 class="xxx_78">+++</h2>
+        <p>
+            ---
+        </p>
+        
+        <h2>---</h2>
+        <p class="xxx_78">
+            ---
+        </p>
+        
+        <div class="bbb_78">
+            ---
+        </div>
+        <h1>#79</h1>
+        <div id="block_79">
+            <h2 class="bbb_79">---</h2>
+            <p class="bbb_79">
+                +++
+            </p>
+            
+            <h2 class="xxx_79">---</h2>
+            <p>
+                ---
+            </p>
+            
+            <h2>---</h2>
+            <p class="xxx_79">
+                +++
+            </p>
+            
+            <div class="bbb_79">
+                ---
+            </div>
+            <div class="xxx_79">
+                ---
+            </div>
+        </div>
+        
+        <h2 class="bbb_79">---</h2>
+        <p class="xxx_79">
+            ---
+        </p>
+        <h1>#80</h1>
+        <div class="fff_80">
+            +++
+        </div>
+        
+        <h2 class="fff_80">+++</h2>
+        <p class="fff_80">
+            +++
+        </p>
+        
+        <h2 class="bbb_80">---</h2>
+        <p class="xxx_80">
+            ---
+        </p>
+        <h1>#81</h1>
+        <div class="fff_81">
+            <h2>---</h2>
+            <p>
+                +++
+            </p>
+            <p>
+                +++
+            </p>
+        </div>
+        
+        <h2 class="fff_81">---</h2>
+        <p class="fff_81">
+            ---
+        </p>
+        <h1>#82</h1>
+        <div id="block_82">
+            <h2>---</h2>
+            <p>
+                ---
+            </p>
+            <p>
+                ---
+            </p>
+            <p class="fff_82">
+                +++
+            </p>
+        </div>
+        
+        <h2 class="fff_82">---</h2>
+        <p class="fff_82">
+            +++
+        </p>
+        <h1>#83</h1>
+        <div class="fff_83">
+            <h2 class="bbb_83">+++</h2>
+            <p>
+                ---
+            </p>
+            <p>
+                ---
+            </p>
+            <p class="bbb_83">
+                +++
+            </p>
+        </div>
+        
+        <h2 class="fff_83">---</h2>
+        <p class="bbb_83">
+            ---
+        </p>
+        <h1>#84</h1>
+        <div class="fff_84">
+            <h2 class="bbb_84">+++</h2>
+            <p>
+                ---
+            </p>
+            
+            <h2 class="bbb_84">+++</h2>
+            <p>
+                ---
+            </p>
+            <p class="bbb_84">
+                ---
+            </p>
+        </div>
+        
+        <h2 class="bbb_84">---</h2>
+        <p class="bbb_84">
+            ---
+        </p>
+        <p class="fff_84">
+            ---
+        </p>
+        <h1>#87</h1>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li id="elem_87">5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+        </ul>
+        <h1>#88</h1>
+        <ul>
+            <li>1</li>
+            <li class="elem_88">2</li>
+            <li>3</li>
+            <li>4</li>
+            <li class="elem_88">5</li>
+            <li>6</li>
+            <li>7</li>
+            <li class="elem_88">8</li>
+            <li>9</li>
+        </ul>
+        <h1>#89</h1>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li id="elem_89">5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+        </ul>
+        <h1>#90</h1>
+        <main id="main_90">
+            <p>-</p>
+            <p>-</p>
+            
+            <div id="div_90">
+                <p>+</p>
+                <p>+</p>
+            </div>
+            <section id="section_90">
+                <p>+</p>
+                <p>+</p>
+            </section>
+        </main>
+        <h1>#98</h1>
+        <a id="a_98" href="#">link</a>
+        <h1>#99</h1>
+        <a id="a_99" href="#">link</a>
+        <h1>#100</h1>
+        <div id="test_100">
+            <a id="a_100" href="#">link</a>
+        </div>
+        <h1>#101</h1>
+        <a id="a_101" class="zzz_101" href="#">link</a>
+        <h1>#102</h1>
+        <div id="block_102">
+            <a id="a_102" class="zzz_102" href="#">link</a>
+        </div>
+        <h1>#103</h1>
+        <div class="block_103">
+            <a id="a_103" class="zzz_103" href="#">link</a>
+        </div>
+        <h1>#104</h1>
+        <ul>
+            <li id="li_104">1</li>
+            <li id="li_104">2</li>
+            <li id="li_104">3</li>
+            <li id="li_104">4</li>
+            <li id="li_104">5</li>
+        </ul>
+        <ul>
+            <li id="li_104">1</li>
+            <li id="li_104">2</li>
+            <li id="li_104">3</li>
+            <li id="li_104">4</li>
+            <li id="li_104">5</li>
+        </ul>
+        <h1>#105</h1>
+        <ul>
+            <li id="li_105">1</li>
+            <li id="li_105">2</li>
+            <li id="li_105">3</li>
+            <li id="li_105">4</li>
+            <li id="li_105">5</li>
+        </ul>
+        <ul>
+            <li id="li_105">1</li>
+            <li id="li_105">2</li>
+            <li id="li_105">3</li>
+            <li id="li_105">4</li>
+            <li id="li_105">5</li>
+        </ul>
+        <h1>#106</h1>
+        <ul>
+            <li id="li_106">1</li>
+            <li id="li_106">2</li>
+            <li id="li_106">3</li>
+            <li id="li_106">4</li>
+            <li id="li_106">5</li>
+        </ul>
+        <ul>
+            <li id="li_106">1</li>
+            <li id="li_106">2</li>
+            <li id="li_106">3</li>
+            <li id="li_106">4</li>
+            <li id="li_106">5</li>
+        </ul>
+        <h1>#107</h1>
+        <ul>
+            <li id="li_107">1</li>
+            <li id="li_107">2</li>
+            <li id="li_107">3</li>
+            <li id="li_107">4</li>
+            <li id="li_107">5</li>
+            <li id="li_107">6</li>
+            <li id="li_107">7</li>
+            <li id="li_107">8</li>
+            <li id="li_107">9</li>
+        </ul>
+        <ul>
+            <li id="li_107">1</li>
+            <li id="li_107">2</li>
+            <li id="li_107">3</li>
+            <li id="li_107">4</li>
+            <li id="li_107">5</li>
+            <li id="li_107">6</li>
+            <li id="li_107">7</li>
+            <li id="li_107">8</li>
+            <li id="li_107">9</li>
+        </ul>
+        <h1>#108</h1>
+        <ul>
+            <li id="li_108">1</li>
+            <li id="li_108">2</li>
+            <li id="li_108">3</li>
+            <li id="li_108">4</li>
+            <li id="li_108">5</li>
+            <li id="li_108">6</li>
+            <li id="li_108">7</li>
+            <li id="li_108">8</li>
+            <li id="li_108">9</li>
+        </ul>
+        <ul>
+            <li id="li_108">1</li>
+            <li id="li_108">2</li>
+            <li id="li_108">3</li>
+            <li id="li_108">4</li>
+            <li id="li_108">5</li>
+            <li id="li_108">6</li>
+            <li id="li_108">7</li>
+            <li id="li_108">8</li>
+            <li id="li_108">9</li>
+        </ul>
+        <h1>#109</h1>
+        <ul>
+            <li id="li_109">1</li>
+            <li id="li_109">2</li>
+            <li id="li_109">3</li>
+            <li id="li_109">4</li>
+            <li id="li_109">5</li>
+            <li id="li_109">6</li>
+            <li id="li_109">7</li>
+            <li id="li_109">8</li>
+            <li id="li_109">9</li>
+        </ul>
+        <ul>
+            <li id="li_109">1</li>
+            <li id="li_109">2</li>
+            <li id="li_109">3</li>
+            <li id="li_109">4</li>
+            <li id="li_109">5</li>
+            <li id="li_109">6</li>
+            <li id="li_109">7</li>
+            <li id="li_109">8</li>
+            <li id="li_109">9</li>
+        </ul>
+        <h1>#110</h1>
+        <ul>
+            <li id="li_110">1</li>
+            <li id="li_110">2</li>
+            <li id="li_110">3</li>
+            <li id="li_110">4</li>
+            <li id="li_110">5</li>
+        </ul>
+        <ul>
+            <li id="li_110">1</li>
+            <li id="li_110">2</li>
+            <li id="li_110">3</li>
+            <li id="li_110">4</li>
+            <li id="li_110">5</li>
+        </ul>
+        <h1>#111</h1>
+        <ul>
+            <li id="li_111">1</li>
+        </ul>
+        <ul>
+            <li id="li_111">1</li>
+            <li id="li_111">2</li>
+            <li id="li_111">3</li>
+            <li id="li_111">4</li>
+            <li id="li_111">5</li>
+        </ul>
+        <h1>#112</h1>
+        <ul id="ul_112">
+            <li id="li_112">1</li>
+            <li id="li_112">2</li>
+            <li id="li_112">3</li>
+            <li id="li_112">4</li>
+            <li id="li_112"></li>
+        </ul>
+        <h1>#113</h1>
+        <div>
+            <h2 id="h2_113">заголовок</h2>
+            <p id="p_113">абзац</p>
+            
+            <h2 id="h2_113">заголовок</h2>
+            <p id="p_113">абзац</p>
+            
+            <h2 id="h2_113">заголовок</h2>
+            <p id="p_113">абзац</p>
+        </div>
+        <h1>#114</h1>
+        <div>
+            <h2 id="h2_114">заголовок</h2>
+            <p id="p_114">абзац</p>
+            
+            <h2 id="h2_114">заголовок</h2>
+            <p id="p_114">абзац</p>
+            
+            <h2 id="h2_114">заголовок</h2>
+            <p id="p_114">абзац</p>
+            
+            <h2 id="h2_114">заголовок</h2>
+            <p id="p_114">абзац</p>
+            
+            <h2 id="h2_114">заголовок</h2>
+            <p id="p_114">абзац</p>
+            
+            <h2 id="h2_114">заголовок</h2>
+            <p id="p_114">абзац</p>
+            
+            <h2 id="h2_114">заголовок</h2>
+            <p id="p_114">абзац</p>
+        </div>
+        <h1>#115</h1>
+        <div>
+            <h2 id="h2_115">заголовок</h2>
+            <p>абзац</p>
+            <p>абзац</p>
+            <p>абзац</p>
+        </div>
+        <div>
+            <h2 id="h2_115">заголовок</h2>
+            <p>абзац</p>
+            
+            <h2 id="h2_115">заголовок</h2>
+            <p>абзац</p>
+            <p>абзац</p>
+        </div>
+        <h1>#116</h1>
+        <ul>
+            <li id="li_116">1</li>
+            <li id="li_116" class="elem">2</li>
+            <li id="li_116">3</li>
+            <li id="li_116">4</li>
+            <li id="li_116" class="elem">5</li>
+            <li id="li_116">6</li>
+            <li id="li_116">7</li>
+            <li id="li_116" class="elem">8</li>
+            <li id="li_116">9</li>
+        </ul>
+        <h1>#117</h1>
+        <ul>
+            <li id="li_117">1</li>
+            <li id="li_117">2</li>
+            <li id="li_117">3</li>
+            <li id="li_117">4</li>
+            <li id="li_117">5</li>
+            <li id="li_117">6</li>
+            <li id="li_117">7</li>
+            <li id="li_117">8</li>
+            <li id="li_117">9</li>
+        </ul>
+        <h1>#118</h1>
+        <ul>
+            <li id="li_118">1</li>
+            <li id="li_118">2</li>
+            <li id="li_118">3</li>
+            <li id="li_118">4</li>
+            <li id="li_118">5</li>
+            <li id="li_118">6</li>
+            <li id="li_118">7</li>
+            <li id="li_118">8</li>
+            <li id="li_118">9</li>
+        </ul>
+	</body>
+</html>
