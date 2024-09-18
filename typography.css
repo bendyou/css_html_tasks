@@ -1,0 +1,268 @@
+/*90.1*/
+
+#p_90_1 {
+	width: 200px;
+	height: 200px;
+	background-color: rgb(63, 119, 172);
+}
+
+/*90.2*/
+
+#p_90_2 {
+	width: 300px;
+	height: 100px;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+	background-color: rgb(107, 235, 107);
+}
+
+/*92.1*/
+
+#div_92_1 {
+	border-width: 4px;
+	border-style: solid;
+	border-color: blue;
+	width: 300px;
+	height: 150px;
+}
+
+/*93.1*/
+
+#div_93_1 {
+	border-width: 5px;
+	border-style: dotted;
+	border-color: red;
+	width: 300px;
+	height: 300px;
+}
+
+/*94.1*/
+
+#div_94_1 {
+	border-width: 2px;
+	border-style: dashed;
+	border-color: orange;
+	width: 300px;
+	height: 140px;
+}
+
+/*96.1*/
+
+#div_96_1 {
+	border-width: 8px;
+	border-style: double;
+	border-color: blue;
+	width: 300px;
+	height: 190px;
+}
+
+/*97.1*/
+
+#div_97_1 {
+	border: 5px solid red;
+	width: 200px;
+	height: 200px;
+}
+
+/*97.2*/
+
+#div_97_2 {
+	border: 5px dotted blue;
+	width: 200px;
+	height: 200px;
+}
+
+/*97.3*/
+
+#div_97_3 {
+	border: 5px dashed green;
+	width: 200px;
+	height: 200px;
+}
+
+/*97.4*/
+
+#div_97_4 {
+	border: 5px double orange;
+	width: 200px;
+	height: 200px;
+}
+
+/*98.1*/
+
+#div_98_1 {
+	width: 200px;
+	height: 200px;
+	border-left: 5px solid orange;
+	border-right: 5px solid green;
+    border-top: 5px solid blue;
+    border-bottom: 5px solid red;
+}
+
+/*98.2*/
+
+#div_98_2 {
+	width: 200px;
+	height: 200px;
+	border-left: 5px solid red;
+	border-right: 5px dotted green;
+    border-top: 2px solid blue;
+    border-bottom: 2px solid blue;
+}
+
+/*99.1*/
+
+#div_99_1 {
+    width: 200px;
+    height: 200px;
+	border: 1px solid green;
+	border-radius: 25px;
+}
+
+/*100.1*/
+
+#div_100_1 {
+	border-radius: 20px;
+	width: 200px;
+	height: 200px;
+	background-color: #45aa8c;
+}
+
+/*101.1*/
+
+#div_101_1 {
+	width: 150px;
+	height: 150px;
+	border-radius: 75px;
+	border: 1px solid green;
+}
+
+/*103.1*/
+
+#div_103_1 {
+	width: 200px;
+	height: 200px;
+	border: 1px solid green;
+	border-radius: 10px 20px 30px 40px;
+}
+
+/*104.1*/
+
+#div_104_1 {
+	width: 200px;
+	height: 200px;
+	border: 1px solid green;
+	border-radius: 10px 40px;
+}
+
+/*105.1*/
+
+#div_105_1 {
+	width: 200px;
+	height: 200px;
+	border: 1px solid green;
+	border-radius: 10px 20px 30px;
+}
+
+/*107.1*/
+
+#div_107_1 {
+	width: 100px;
+	height: 100px;
+	border: 1px solid green;
+	border-radius: 50%;
+}
+
+/*108.1*/
+
+#div_108_1 {
+	background-image: url("bg.png");
+    /*background-repeat: no-repeat; -> Без background-repeat фоновая картинка замостит собой весь блок */
+	width: 300px;
+	height: 300px;
+	border: 1px solid black;
+    border-radius: 50%;
+}
+
+/*109.1*/
+
+#div_109_1 {
+	background-repeat: repeat-x;
+	background-image: url("bg.png");
+	width: 500px;
+	height: 500px;
+	border: 1px solid black;
+}
+
+/*109.2*/
+
+#div_109_2 {
+	background-repeat: repeat-y;
+	background-image: url("bg.png");
+	width: 500px;
+	height: 500px;
+	border: 1px solid black;
+}
+
+/*110.1*/
+
+#div_110_1_1 {
+	background-position: center center;
+	background-image: url("bg.png");
+	background-repeat: no-repeat;
+	width: 500px;
+	height: 500px;
+	border: 1px solid black;
+    background-size: 100px 100px;
+}
+
+/*
+#body_110_1_2 {
+	background-attachment: scroll;
+	background-image: url("bg.png");
+}
+#div_110_1_2 {
+	width: 400px;
+	margin: 0 auto;
+	text-align: justify;
+	font-weight: bold;
+	font-size: 20px;
+}
+*/
+
+/*112.1*/
+
+#ul_112_1 {
+	list-style-type: square;
+}
+
+/*113.1*/
+
+#ul_113_1 {
+	list-style-type: circle;
+}
+
+/*115.1*/
+
+#ul_115_1 {
+	list-style-type: none;
+}
+
+/*119.1*/
+
+#ol_119_1 {
+	list-style-type: lower-alpha;
+}
+
+/*120.1*/
+
+#ol_120_1 {
+	list-style-type: upper-alpha;
+}
+
+/*121.1*/
+
+#ol_121_1 {
+	list-style-type: lower-greek;
+}
